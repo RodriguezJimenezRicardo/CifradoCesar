@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="icon" type="image/png" href="images/Cesar.png">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+          <div class="one-half column" style="margin-top: 15%">
+            <h1>Cifrado Cesar</h2>
+            <p>Este cifrado es un ejemplo del cifrado original cesar 
+                en el cual se usa un cambio en la posicion dentro del 
+                alfebeto de n lugares. Es necesario escribir algo en el 
+                textarea que aparece debajo y un numero de maximo de 8 
+                cifras en donde dice "Posicion" para que funcione. c:</p>
+                <textarea id="cadena" onkeypress=""></textarea>
+                <p><input type="button" value="Cifrar" onclick="codificar()">
+                <input type="button" value="Descifrar" onclick="decodificar()">
+                <input type="text" value="Posicion" id="posicion" onkeypress="return num(event)" maxlength="8">
+                Resultado: </p>
+                <div id="resultado"></div>
+          </div>
+        </div>
+    </div>        
+    
+    <script src="js/logica.js"></script>
+    <script src="js/validacion.js"></script>
+</body>
+</html>
